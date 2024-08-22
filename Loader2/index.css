@@ -1,0 +1,47 @@
+.card {
+    position: relative;
+    width: 80px;
+    height: 30px;
+    background: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.card button {
+    background: transparent;
+    border: none;
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+.loader {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid rgb(234, 229, 229);
+    border-left-color: rgb(12, 12, 12);
+    /* border-right-color: rgb(20, 19, 19); */
+    animation: l2 1s infinite linear;
+}
+
+@keyframes l2 {
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.hidden {
+    display: none;
+    z-index: -2;
+}
+
+.add {
+    z-index: -1;
+}
