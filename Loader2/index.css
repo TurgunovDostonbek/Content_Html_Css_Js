@@ -45,3 +45,9 @@
 .add {
     z-index: -1;
 }
+
+input {
+    text-align: center;
+    width: 40px;
+    height: 40px;
+}
