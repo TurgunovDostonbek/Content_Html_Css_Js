@@ -46,6 +46,10 @@
     z-index: -1;
 }
 
+form {
+    margin: 20px;
+}
+
 input {
     text-align: center;
     width: 40px;
