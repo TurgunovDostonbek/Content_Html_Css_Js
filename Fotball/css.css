@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #06ec2c;
+}
+
+.box {
+  width: 1200px;
+  height: 100vh;
+  margin: auto;
+  /* border: 1px solid black */
+  position: relative;
+}
+
+.box_info {
+  width: 100%;
+  height: 100vh;
+  border: 5px solid #FFF;
+  background: #06ec2c;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+i {
+  position: fixed;
+  font-size: 40px;
+  top: 0;
+  transition: 1s;
+}
+
+.box_ball {
+  width: 100px;
+  height: 200px;
+  border: 4px solid #FFF;
+}
+
+.hidden {
+  display: none;
+}
