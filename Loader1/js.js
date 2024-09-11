@@ -1,0 +1,1 @@
+const name = alert("loading...");
