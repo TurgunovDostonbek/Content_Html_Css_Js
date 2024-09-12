@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  /* border: 1px solid red; */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper_info_links {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  position: relative;
+  width: 275px;
+  border: 2px solid rgb(192, 189, 189);
+  border-radius: 8px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5px;
+  overflow-x: hidden;
+  box-shadow: 14px 14px 18px 0px rgba(34, 60, 80, 0.2);
+}
+
+.card>img {
+  border-radius: 10px;
+  width: 260px;
+  text-align: center;
+
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+}
+
+.icon {
+  position: absolute;
+  width: 50px;
+  height: 200px;
+  right: -50px;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card:hover .icon {
+  right: 10px;
+  transition: 0.8s ease;
+}
+
+i {
+  position: relative;
+  background: #FFF;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+i:hover {
+  color: #FFF;
+  background-color: rgb(17, 225, 45);
+}
+
+.like {
+  position: absolute;
+  top: 0;
+  right: 4px;
+  color: red;
+  font-size: 10px;
+}
