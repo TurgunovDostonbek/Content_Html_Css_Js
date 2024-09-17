@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.box {
+  width: 400px;
+  height: 400px;
+  border: 1px solid rgb(87, 83, 83);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box>h1 {
+  font-size: 40px;
+  color: rgb(118, 118, 117);
+}
