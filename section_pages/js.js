@@ -63,38 +63,6 @@ let products = [
     skidka: "$120",
     sum: "$150",
   },
-  {
-    id: 8,
-    img: "./img/img_8.png",
-    name: "Furniture",
-    model: "Delicia 3 Piece  Room",
-    skidka: "$120",
-    sum: "$150",
-  },
-  {
-    id: 8,
-    img: "./img/img_8.png",
-    name: "Furniture",
-    model: "Delicia 3 Piece  Room",
-    skidka: "$120",
-    sum: "$150",
-  },
-  {
-    id: 8,
-    img: "./img/img_8.png",
-    name: "Furniture",
-    model: "Delicia 3 Piece  Room",
-    skidka: "$120",
-    sum: "$150",
-  },
-  {
-    id: 8,
-    img: "./img/img_8.png",
-    name: "Furniture",
-    model: "Delicia 3 Piece  Room",
-    skidka: "$120",
-    sum: "$150",
-  },
 ];
 let count = 0;
 const cards = document.querySelector(".cards");
