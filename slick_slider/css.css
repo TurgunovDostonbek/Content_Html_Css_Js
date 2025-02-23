@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #cfbfbf;
+}
+
+.container {
+  max-width: 1250px;
+  width: 100%;
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.slider {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 30px;
+  background: #f0f0f0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.slider img {
+  width: 95%;
+  height: 90vh;
+  object-fit: cover;
+  margin: auto;
+  border-radius: 30px;
+  padding: 10px;
+  cursor: pointer;
+}
