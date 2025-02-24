@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Example</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      height: 100vh;
+      background: linear-gradient(45deg, #ff9a9e, #bb0cb2, #f03a08, #4cb606);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+    }
+
+    @keyframes gradientBG {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .card {
+      width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-align: center;
+      background: #fff;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-title {
+      font-size: 1.5em;
+      margin: 0;
+    }
+
+    .card-description {
+      color: #777;
+      margin: 10px 0 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <img src="https://picsum.photos/200/300" alt="Card Image">
+    <div class="card-content">
+      <h2 class="card-title">Card Title</h2>
+      <p class="card-description">This is a description of the card. It provides additional details about the content of
+        the card.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://picsum.photos/200/300" alt="Card Image">
+    <div class="card-content">
+      <h2 class="card-title">Card Title</h2>
+      <p class="card-description">This is a description of the card. It provides additional details about the content of
+        the card.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://picsum.photos/200/300" alt="Card Image">
+    <div class="card-content">
+      <h2 class="card-title">Card Title</h2>
+      <p class="card-description">This is a description of the card. It provides additional details about the content of
+        the card.</p>
+    </div>
+  </div>
+</body>
+
+</html>
