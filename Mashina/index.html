@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Drawing</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: #f0f0f0;
+    }
+
+    .car {
+      position: relative;
+      width: 400px;
+      height: 200px;
+      background: #ff5733;
+      border-radius: 40px 40px 0 0;
+      margin: 50px auto;
+    }
+
+    .car::before {
+      content: '';
+      position: absolute;
+      top: -60px;
+      left: 40px;
+      width: 320px;
+      height: 120px;
+      background: #ff5733;
+      border-radius: 40px 40px 0 0;
+    }
+
+    .window {
+      position: absolute;
+      top: -40px;
+      left: 60px;
+      width: 280px;
+      height: 80px;
+      background: #ffffff;
+      border-radius: 20px;
+    }
+
+    .wheel {
+      position: absolute;
+      bottom: -40px;
+      width: 80px;
+      height: 80px;
+      background: #000000;
+      border-radius: 50%;
+    }
+
+    .wheel.left {
+      left: 40px;
+    }
+
+    .wheel.right {
+      right: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="car">
+    <div class="window"></div>
+    <div class="wheel left"></div>
+    <div class="wheel right"></div>
+  </div>
+</body>
+
+</html>
