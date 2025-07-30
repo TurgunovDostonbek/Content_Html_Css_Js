@@ -64,8 +64,32 @@ let products = [
     sum: "$150",
   },
 ];
+// let count = 0;
+// const cards = document.querySelector(".cards");
+
+// products.map((item) => {
+//   let dv = document.createElement("div");
+//   dv.classList.add("card");
+//   dv.innerHTML += `
+//     <img src= "${item.img}" alt ="" />
+//     <p>${item.name}</p>
+//     <h2>${item.model}</h2>
+//     <p>${item.skidka} <span>${item.sum}</span></p>
+//     <div class = "icon" >
+//     <i  class="fa-regular fa-heart">
+//       <span class = "like">${count}</span>
+//     </i>
+//     <i class="fa-solid fa-basket-shopping"></i>
+//     <i class="fa-solid fa-rotate-right"></i>
+//     <i class="fa-regular fa-eye"></i>
+//     </div>
+//   `;
+//   cards.append(dv);
+// });
+
 let count = 0;
 const cards = document.querySelector(".cards");
+const cart = [];
 
 products.map((item) => {
   let dv = document.createElement("div");
@@ -76,13 +100,19 @@ products.map((item) => {
     <h2>${item.model}</h2>
     <p>${item.skidka} <span>${item.sum}</span></p>
     <div class = "icon" >
-    <i  class="fa-regular fa-heart">
+    <i class="fa-regular fa-heart">
       <span class = "like">${count}</span>
     </i>
-    <i class="fa-solid fa-basket-shopping"></i>
+    <i class="fa-solid fa-basket-shopping" onclick="addToCart(${item.id})"></i>
     <i class="fa-solid fa-rotate-right"></i>
     <i class="fa-regular fa-eye"></i>
     </div>
   `;
   cards.append(dv);
 });
+
+function addToCart(id) {
+  const product = products.find((item) => item.id === id);
+  cart.push(product);
+  console.log(cart);
+}
