@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css.css">
+</head>
+<body>
+    <div id="app">
+        <div id="prize">
+          <div id="prize-lines" class="prize-filter"></div>
+          <div id="prize-shadow" class="prize-filter"></div>
+          <h2 id="prize-label">
+            <span class="asterisk">*</span>
+            <span>CASH PRIZE</span>
+            <span class="asterisk">*</span>      
+          </h2>
+          <h1 id="prize-text"></h1>
+        </div>
+        
+        <div id="shapes">
+          <i class="fa-regular fa-circle"></i>
+          <i class="fa-regular fa-square"></i>
+          <i class="fa-solid fa-caret-up"></i>
+        </div>
+        
+        <div id="actions-wrapper">
+          <div id="actions">
+            <div id="theme-actions">
+              <button class="theme-button" data-theme="green" data-selected="true" onclick="handleChangeTheme(event)">
+                <i class="fa-regular fa-circle"></i>
+              </button>
+              <button class="theme-button" data-theme="blue" onclick="handleChangeTheme(event)">
+                <i class="fa-regular fa-square"></i>
+              </button>
+              <button class="theme-button" data-theme="pink" onclick="handleChangeTheme(event)">
+                <i class="fa-regular fa-triangle"></i>
+              </button>
+            </div>
+            <button id="redo-button" type="button" onclick="handleRedo()">
+              <i class="fa-solid fa-arrows-repeat"></i>
+              <span>Rerun</span>
+            </button>
+          </div>
+        </div>
+      </div>
+</body>
+<script src="./js.js"></script>
+</html>
